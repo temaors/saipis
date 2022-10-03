@@ -1,0 +1,113 @@
+#MainTable{
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 100%;
+    height: 625px;
+    border-spacing: 5px;
+    background-color: cornflowerblue;
+}
+
+.FirstSell{
+    background-origin: border-box;
+    background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-03/1614574342_18-p-belii-fon-v-kletochku-18.png');
+    background-size:100%;
+    opacity: 70%;
+}
+
+.SecondSell{
+    column-count: 3;
+    column-rule: 2px solid blue;
+    width: 50%;
+    height: 100%;
+    vertical-align: center;
+    font-size: 110%;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue
+}
+
+.ImageBlock
+{
+    position: relative;
+    vertical-align: top;
+}
+
+.Position
+{
+    position: absolute;
+}
+
+.FirstImage
+{
+    opacity: 30%;
+    top: -300px;
+    left: 300px;
+}
+
+.SecondImage
+{
+    opacity: 60%;
+    top: -200px;
+    left: 200px;
+}
+
+.ThirdImage
+{
+    opacity: 100%;
+    top: -100px;
+    left: 100px;
+}
+
+.MiniTable{
+    display: inline-block;
+    border-collapse: collapse;
+    top: 400px;
+    left: 150px;
+    color: brown;
+}
+
+.Text{
+    text-shadow: 3px 3px 7px black;
+    font-size: 20px;
+}
+
+.AnimationImage{
+    position: absolute;
+    animation: ani 20s infinite;
+}
+
+@keyframes ani
+{
+    from{
+        filter: opacity(0%);
+        transform: rotate(0deg);
+        left: 10px;
+        top: 10px
+    }
+
+    30%{
+        filter: opacity(50%);
+        transform: rotate(360deg);
+        left: 700px;
+        top: 10px
+    }
+
+    60%{
+        filter: opacity(100%);
+        transform: rotate(0deg);
+        left: 1400px;
+        top: 10px
+    }
+
+    90%{
+        filter: opacity(50%);
+        transform: rotate(360deg);
+        left: 700px;
+        top: 10px
+    }
+
+    to{
+        filter: opacity(0%);
+        transform: rotate(0deg);
+        left: 10px;
+        top: 10px
+    }
+}
